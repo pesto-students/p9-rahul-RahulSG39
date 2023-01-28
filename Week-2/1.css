@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    padding: 30px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+}
+
+h1 {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+header{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:  0 0 10px gray;
+}
+
+.description {
+    text-align: center;
+    flex: 1;
+}
+
+.description p {
+    margin: 50px;
+    text-align: justify;
+}
+
+.description img {
+    width: 90%;
+}
+
+.articles {
+    padding: 10px;
+    flex: 1;
+}
+
+article {
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:  0 0 2px gray;
+    padding: 20px;
+}
+
+article p {
+    text-align: justify;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+article h4 {
+    text-transform: uppercase;
+}
+
+form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    text-align: start;
+    border-radius: 20px;
+    box-shadow:  0 0 10px gray;
+}
+
+form h2{
+    margin-bottom: 20px;
+}
+
+table tr {
+    height: 40px;
+}
+
+td button {
+    padding: 10px;
+    background-color: rgb(6, 180, 238);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    margin-left: 200px;
+}
+
+td button:hover {
+    background-color: rgb(16, 90, 114);
+}
+
+footer {
+    background-color: rgb(138, 165, 164);
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .articles {
+        margin-top: 30px;
+    } 
+}
