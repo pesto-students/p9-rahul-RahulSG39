@@ -1,1 +1,54 @@
+# Exercise1.1:
 
+1. Once a user enters a URL into the browsers address bar the following will happen:
+- First the browser searches its cache to check if the IP address of the DNS provided by the user is found. If the IP does not exist in the cache, it means that the URL is being searched for the first time.
+- If IP not found in cache, the browser sends a request to the DNS and performs a DNS lookup. This fetches the IP address of the DNS provided by the user. This request and response happens through a TCP 3-way handshake protocol.
+- Once a connection to the server is made, the broswer then sends a HTTP request to the server asking it to provide the web page.
+- Once the server responds with the web page, the browser then parses and renders the content on the screen.
+
+    **a**. The main functionality of the broswer is to act a bridge between the user and the resource they are looking for. The browser takes in the request from the user about the resource they need and then proceeds to fetch the resource from an external server after which it renders the content of the resource on the screen for the user.
+    There are multiple broswers such as Chrome, Firefox, Safari, Edge etc. Most of these browsers have some common elements with each other:
+    - The address bar for inserting the URL
+    - Bookmarks tab
+    - Forward and backward buttons
+    - Home button
+    - Refresh and stop buttons
+    - Download button
+
+    **b**. The high level components of a broswer include:
+    - **The user interface**: The user interface is basically all the visual elements provided on the screen by the broswer except the requested resource. This includes the bookmarks, back button, address bar, refresh button etc.
+    - **The browser engine**: The browser engine is a core component of browsers and is mainly used for combining HTML and CSS, also acts as the bridge between the UI and rendering engine.
+    - **The rendering engine**: The rendering engine is used to display the requested resource. The rendering engine takes in the content provided by network layer and parses the HTML and CSS, and displays the parsed output on the screen.
+    - **Networking**: Networking is basically used for all the request and response calls that happens between the browser and the server.
+    - **Javascript Interpreter**: Javascript interpreter is basically used to parse and execute the javascript code.
+    - **UI backend**: The ui backend is used to draw out basic types of widgets like input box, check box, windows etc.
+    - **Data storage**: All sorts of data that the browser needs to save like cookies are stored here. This is a persistence layer.
+     
+    **c**. The rendering engine plays the role of rendering the resource requested on the broswer screen.
+    The rendering engine by default render HTML, XML and images. Other types of data can be rendered using various plug-ins or extensions.
+    There are different rendering engines that different browsers use. For example, Chrome uses Blink whereas Safari uses WebKit.
+    
+    **d**. Parsers: Once the browsers receive response after the initial request to the server, the HTML and CSS response is then parsed by the browser.
+    Parsing basically refers to the process of changing or transforming our HTML and CSS into a form that is understandable by the browser. This is done by the browser engine.
+    - HTML parsing: HTML parsing involves two steps:
+    	- Tokenization: Refers to breaking down our HTML document into various tokens or components.
+    	- Tree construction: Happens after tokenization and it refers to creation of DOM (Document Object Model) from the tokens.
+    - CSS parsing: CSS parsing happens right after the HTML parsing and the goal is to create a CSSOM (CSS object Model). It involves two steps:
+    	- Tokenization: Refers to breaking down our CSS file into various tokens or components.
+    	- CSSOM construction: Happens after tokenization and it refers to creation of CSSOM (CSS Object Model) from the tokens.
+    
+    **e**. Script processors: Once we have the DOM and the CSSOM, now the javascript from the resource requested is taken and is interpreted using javascript engines.
+    There are multiple engines like the V8, Chakra, SpiderMonkey etc. All these browser engines have the capacity to mix between compilation and interpretation using JIT (Just in time compiler).
+    
+    **f**. Tree construction: Tree construction refers to the render tree. Render tree is what is constructed as the result of HTML parsing and CSS parsing. The DOM and CSSOM are merged together to create the render tree. The render tree contains all the information related to Layout and Painting.
+    
+    **g**. Order of script processing: The Just in time compiler (JIT) takes advantage of both compilation and interpretation. Source code is converted into the machine code in the first step. In the second step the code is transformed into a data structure called the Abstract Syntax Tree (AST).
+    
+    **h**. *Layout*: The layout is where the elements are marked on the screen. The layout includes all the calculations and mathematics behind an element's position so it takes all the properties related to the position (height, width, position, top left right bottom, etc) from The Render Tree and places the elements on the screen.
+    *Paint*: After Layout, a Paint happens. Paint takes properties like color, background-color, border-color, box-shadow, etc. to paint the screen with colors.
+    
+    
+    	 
+    	
+    
+    

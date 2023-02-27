@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+nav > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    height: 30%;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+header > img {
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+}
+
+.header-content {
+    margin-left: 50px;
+    color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-content-text {
+    margin-bottom: 60px;
+}
+
+.header-content-text > h2{
+    margin-bottom: 10px;
+}
+
+.header-content-text > span{
+    font-weight: bold;
+    display: block;
+    font-size: 0.8em;
+}
+
+.header-content-actions > span {
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+table {
+    width: 100%;
+    padding: 10px;
+}
+
+tr {
+    height: 50px;
+} 
+
+tr:nth-child(even){
+    background-color: #f1f1f1;
+}
+
+td {
+    padding: 0px 20px;
+}
+
+td:nth-child(4){
+    text-align: end;
+}
+
+td:nth-child(4) > a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 15%;
+    background-color: hsl(232, 35%, 57%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.footer-content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content-info > h3 {
+    margin: 0px 0px 20px;
+}
+
+.footer-content > img {
+    height: 120px;
+    width: 120px;
+    margin: 15px 15px;
+}
+
+.footer-content-actions{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.footer-content-actions > a {
+    color: white;
+}
